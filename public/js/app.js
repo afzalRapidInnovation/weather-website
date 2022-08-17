@@ -24,18 +24,14 @@ const messageTwo = document.querySelector('#message-2');
 // messageOne.textContent = 'From javascript 1';
 // messageTwo.textContent = 'From javascript 2';
 
-
-
-
 weatherForm.addEventListener('submit',(e) => {
     e.preventDefault();
 
     const location = search.value;
-
     messageOne.textContent = 'Loading...';
     messageTwo.textContent = '';
 
-    fetch('/weather?address='+location).then((response) => {
+    fetch('/weather?address='+lolocation).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 // console.log(data.error)
