@@ -6,7 +6,7 @@ const { forecast } = require("./utils/forecast");
 
 
 const app = express();
-const port = process.abort.PORT || 8080;
+const port = process.abort.PORT || 3000;
 // console.log(__dirname);
 // console.log(path.join(__dirname,'../public'));
 
