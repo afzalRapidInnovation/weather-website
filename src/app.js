@@ -6,6 +6,7 @@ const { forecast } = require("./utils/forecast");
 
 
 const app = express();
+const port = process.abort.PORT || 8080;
 // console.log(__dirname);
 // console.log(path.join(__dirname,'../public'));
 
@@ -109,6 +110,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(8080, () => {
-  console.log(`Server is up on port 8080`);
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
