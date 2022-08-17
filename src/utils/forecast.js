@@ -14,7 +14,7 @@ const forecast = (latitute,longitute,callback) => {
             const feelsLike = current.feelslike;
             // console.log(current.weather_descriptions+'. It is currently '+ cecl + ' degree out. And there feels like '+feelsLike + ' degree out.');
             callback(undefined, {
-                summary: `${current.weather_descriptions}. It is currently ${cecl}  degree  out. And there feels like ${feelsLike} degree out.`
+                summary: `${current.weather_descriptions}. It is currently ${cecl}  degree  out. And there feels like ${feelsLike} degree out. And humidity is ${current.humidity}`
             })
         }
     })
